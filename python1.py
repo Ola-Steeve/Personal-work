@@ -1,4 +1,5 @@
 from cgi import print_form
+from multiprocessing.sharedctypes import Value
 from xml.etree.ElementTree import Comment
 
 
@@ -39,5 +40,27 @@ age='133'
 print(name, 'is',age)
 print(f'name: {name} age: {age}')
 
-if name == 'Ben':
+if name == 'Ben' and age =='133':
     print('this is truly ben')
+
+
+
+print('Ola is awesome')
+
+for i in range(10):  #start=0,stop=10,step=1
+    print(i)
+
+my_list=['a','b','c','d','e']
+
+for index in range(len(my_list)):
+    value =my_list[index]
+    print(index,value)
+
+
+
+##############################
+
+count =0
+while count is True:
+    print('i Like to move it')
+    count+1
